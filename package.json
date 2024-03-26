@@ -1,0 +1,35 @@
+{
+  "name": "springcloud-config",
+  "version": "1.0.0",
+  "description": "springcloud-config的配置中心",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prerelease": "standard-version --release-as path --dry-run",
+    "prepare": "husky install",
+    "commitlint:init": "commitlint init cz-git --save-dev",
+    "git:commit": "czg",
+    "git:changelog": "conventional-changelog -p angular -u -i CHANGELOG.md -s -r 0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.2.1",
+    "@commitlint/config-conventional": "^19.1.0",
+    "commitizen": "^4.3.0",
+    "conventional-changelog-cli": "^4.1.0",
+    "cz-git": "^1.9.0",
+    "czg": "^1.9.0",
+    "husky": "^9.0.11",
+    "standard-version": "^9.5.0"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "npx --no-install commitlint --edit $1"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-git",
+      "czConfig": "./scripts/commitlint.config.js"
+    }
+  }
+}
