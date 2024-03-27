@@ -9,7 +9,7 @@
     "prepare": "husky install",
     "commitlint:init": "commitizen init cz-conventional-changelog --save-dev --save-exact",
     "git:commit": "git-cz",
-    "git:changelog": "conventional-changelog -p angular -u -i CHANGELOG.md -s -r 0"
+    "git:changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.2.1",
