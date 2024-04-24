@@ -153,12 +153,12 @@ target_release_config_file_path="$HOME/.versionrc.js"
 target_commitizen_config_file_path="$HOME/.commitlintrc.js"
 
 command_merge=""
-command_commitizen="npm install -g cz-git commitizen standard-version"
+command_commitizen="npm install -g cz-git commitizen @commitlint/cli @commitlint/config-conventional standard-version"
 
 command_merge+="${command_commitizen};"
 
 initCommitizenConfig() {
-  # eval $command_merge
+  eval $command_merge
   if [ ! -d "$script_tools_dir" ]; then
     mkdir -p "$script_tools_dir"
     echo "Created directory: $script_tools_dir"
