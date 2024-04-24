@@ -101,13 +101,13 @@ usage() {
   echo "版本号说明: major.minor.patch (主版本.次版本.修订版)"
   echo ""
   echo "参数列表："
-  echo "  -f|--first-release:         用于生成第一个版本时，忽略之前的提交历史。"
+  echo "  -f|--first-release:          用于生成第一个版本时，忽略之前的提交历史。"
   echo "  -p|--prerelease:             预发版本。例如 --prerelease alpha。"
   echo "  -r|--release-as              指定发布的版本号。例如 --tag-prefix [patch or minor or major or 1.0.1] 默认为：path"
   echo "  -t|--tag-prefix:             版本标签前缀。例如 --tag-prefix v。 默认为：v"
   echo "  -n|--no-verify:              跳过提交消息格式的验证。"
-  echo "  -d|--dry-run:               运行模拟模式，不实际修改文件。"
-  echo "  -b|--branch:                切换git分支"
+  echo "  -d|--dry-run:                运行模拟模式，不实际修改文件。"
+  echo "  -b|--branch:                 切换git分支"
 }
 
 #========================================= Shell 业务 =========================================
