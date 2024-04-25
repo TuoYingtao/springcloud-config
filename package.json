@@ -5,29 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prerelease": "standard-version --release-as path --dry-run",
-    "prepare": "husky install",
-    "commitlint:init": "commitizen init cz-conventional-changelog --save-dev --save-exact",
-    "git:commit": "git-cz",
-    "git:changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+    "prepare": "husky install"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.2.1",
-    "@commitlint/config-conventional": "^19.1.0",
-    "commitizen": "^4.3.0",
-    "conventional-changelog-cli": "^4.1.0",
-    "cz-conventional-changelog": "^3.3.0",
-    "husky": "^9.0.11",
-    "standard-version": "^9.5.0"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
+    "husky": "^9.0.11"
   }
 }
