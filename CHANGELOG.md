@@ -1,3 +1,26 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### 1.1.3 (2024-04-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* **commitlint_test:** 测试非兼容性重大变更
+
+测试换行
+* **changelog.md:** #1
+
+### feat
+
+* **changelog.md:** 更新版本日志 ([1d0b2e3](https://github.com/TuoYingtao/springcloud-config/commit/1d0b2e3de8a40c7258cf00be8846bc2fc7358bb0)), closes [#1](https://github.com/TuoYingtao/springcloud-config/issues/1)
+
+
+### feature
+
+* **commitlint_test:** :sparkles: 这是一个简单的描述提交信息 ([c5dc8fd](https://github.com/TuoYingtao/springcloud-config/commit/c5dc8fd525ff9417156016c7a6167c761665d24e)), closes [#1](https://github.com/TuoYingtao/springcloud-config/issues/1)
+
 ## 1.1.2 (2024-03-27)
 
 
